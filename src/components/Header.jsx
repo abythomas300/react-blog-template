@@ -1,11 +1,28 @@
-import "./Header.css"
-function Header() {
-    return(
-        <div className="header-container">
-            <h2>MY BLOG</h2>
-            <p>Welcome to my blog where I share my life journey</p>
-        </div>
-    )
-}
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
 
-export default Header
+export default function Header() {
+  return (
+    <Box>
+      <AppBar position="static" color='warning'>
+        <Toolbar  sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          p: 2
+          }}>
+          <Typography variant="h3" component="div" sx={{p: 2}}>
+            MY BLOG
+          </Typography>
+          <Typography variant="h6" component="div" sx={{p: 2}}>
+            Welcome to the blog where I share my thoughts and ideas!
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      
+    </Box>
+  );
+}
