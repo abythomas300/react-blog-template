@@ -11,7 +11,7 @@ import CommentOutlinedIcon from '@mui/icons-material/CommentOutlined';
 
 export default function CardComponent() {
   return (
-    <Card sx={{ p:0, my:0, height: '100%', width: '100%'}}>
+    <Card sx={{ p:0, my:4, height: '100%', width: '100%'}}>
       <CardMedia
         component="img"
         image="https://cdn.pixabay.com/photo/2024/11/07/03/12/lizard-9179598_1280.jpg"

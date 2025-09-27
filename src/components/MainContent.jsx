@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { styled } from '@mui/material/styles';
+// import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
@@ -7,49 +7,47 @@ import Grid from '@mui/material/Grid';
 import CardComponent from "./CardComponent"
 import SidebarComponent from "./SidebarComponent"
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: '#ff6347',
-  ...theme.typography.body2,
-  padding: theme.spacing(0),
-  textAlign: 'left',
-  color: (theme.vars ?? theme).palette.text.secondary,
-  ...theme.applyStyles('dark', {
-    backgroundColor: '#1A2027'
-  }),
-}));
+
+// const Item = styled(Paper)(({ theme }) => ({
+//   backgroundColor: '#76acff',
+//   ...theme.typography.body2,
+//   padding: theme.spacing(0),
+//   textAlign: 'left',
+//   color: (theme.vars ?? theme).palette.text.secondary,
+//   ...theme.applyStyles('dark', {
+//     backgroundColor: '#76acff',
+//   }),
+// }));
 
 export default function MainContent() {
   return (
-    <Box sx={{bgcolor: "tomato", p: 2}}>
-      <Grid container spacing={2}>
+    <Box sx={{bgcolor: "#faff4e", p: 2}}>
+      <Grid container spacing={6}>
 
         {/* Cards component inside the grid layout*/}
         <Grid size={9}>
-            <Item sx={{my:2}}>
+            <Paper elevation={10}>
                 <CardComponent />
-            </Item>
-            <Item sx={{my:2}}>
+            </Paper>
+            <Paper elevation={10}>
                 <CardComponent />
-            </Item>
-            <Item sx={{my:2}}>
+            </Paper>
+            <Paper elevation={10}>
                 <CardComponent />
-            </Item>
-            <Item sx={{my:2}}>
+            </Paper>
+            <Paper elevation={10}>
                 <CardComponent />
-            </Item>
-            <Item sx={{my:2}}>
+            </Paper>
+            <Paper elevation={10}>
                 <CardComponent />
-            </Item>
-            
+            </Paper>
         </Grid>
 
         {/* Sidebar component inside the grid layout*/} 
         <Grid size={3}>
-
-          <Item sx={{my:2}}>
-            <SidebarComponent />
-          </Item>
-
+            <Box>
+                <SidebarComponent/>
+            </Box>
         </Grid>
 
       </Grid>

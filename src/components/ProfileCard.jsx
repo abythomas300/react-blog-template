@@ -7,7 +7,7 @@ import CardActionArea from '@mui/material/CardActionArea';
 
 export default function ProfileCard() {
   return (
-    <Card sx={{ p:0, my:0, height: '100%', width: '100%' }}>
+    <Card sx={{ p:0, height: '100%', width: '100%', my:4, borderRadius: 5 }}>
       <CardActionArea>
         <CardMedia
           component="img"
