@@ -4,17 +4,13 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListSubheader from '@mui/material/ListSubheader';
-import Avatar from '@mui/material/Avatar';
-import ImageIcon from '@mui/icons-material/Image';
-import WorkIcon from '@mui/icons-material/Work';
-import BeachAccessIcon from '@mui/icons-material/BeachAccess';
 import { Divider } from '@mui/material';
 
 export default function PopularPosts() {
   return (
     <List sx={{ width: '100%', my:10 ,maxWidth: 360, bgcolor: 'background.paper', borderRadius: 5}}>
       <ListSubheader sx={{fontSize: 'large', borderRadius: 5}}>Popular Posts</ListSubheader>
-      <Divider></Divider>
+      <Divider sx={{my: 2}}></Divider>
 
       <ListItem>
         <ListItemAvatar>
