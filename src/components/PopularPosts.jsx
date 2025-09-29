@@ -6,13 +6,18 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListSubheader from '@mui/material/ListSubheader';
 import { Divider } from '@mui/material';
 import Paper from '@mui/material/Paper';
-
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 export default function PopularPosts() {
   return (
     <Paper elevation={10} sx={{mt: 2, borderRadius: 5, p:0}}>
-      <List sx={{ width: '100%', my:10 ,maxWidth: 360, bgcolor: 'background.paper', borderRadius: 5}}>
-      <ListSubheader sx={{fontSize: 'large', borderRadius: 5, }}>Popular Posts</ListSubheader>
-      <Divider sx={{my: 2}}></Divider>
+      <List sx={{ width: '100%', my:0 ,maxWidth: 360, bgcolor: 'background.paper', p:0, borderRadius: 5}}>
+      <Box sx={{display: 'flex', p:2}}>
+        <Typography variant='h6'>
+          Popular Posts
+        </Typography>
+      </Box>
+      <Divider></Divider>
 
       <ListItem>
         <ListItemAvatar>

@@ -4,6 +4,8 @@ import Stack from '@mui/material/Stack';
 import Paper from '@mui/material/Paper';
 import ListSubheader from '@mui/material/ListSubheader';
 import { Divider } from '@mui/material';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 
 export default function Tags() {
   const handleClick = () => {
@@ -12,7 +14,11 @@ export default function Tags() {
 
   return (
     <Paper elevation={10} sx={{mt: 2, borderRadius: 5, p:0}}>
-        <ListSubheader sx={{fontSize: 'large', borderRadius: 5}}>Tags</ListSubheader>
+        <Box sx={{display: 'flex', p:2}}>
+          <Typography variant='h6'>
+            Tags
+          </Typography>
+        </Box>
         <Divider></Divider>
 
         <Stack direction="row" spacing={2} gap={1} label="Tags" sx={{flexWrap: 'wrap', p:2, my: 2}}>
