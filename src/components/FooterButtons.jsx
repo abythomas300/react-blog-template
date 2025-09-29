@@ -8,7 +8,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 export default function IconLabelButtons() {
   return (
-    <Stack direction="row" spacing={5}>
+    <Stack direction="row" spacing={5} sx={{width: '100%',justifyContent: 'space-between'}}>
       <Button variant="contained" startIcon={<ArrowBackIosIcon/>} color='secondary'>
         Previous
       </Button>

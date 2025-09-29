@@ -12,12 +12,12 @@ export default function Header() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          p: 2
+          p: 1
           }}>
-          <Typography variant="h3" component="div" sx={{p: 2}}>
+          <Typography variant="h3" component="div" sx={{p: 1}}>
             MY BLOG
           </Typography>
-          <Typography variant="h6" component="div" sx={{p: 2}}>
+          <Typography variant="h6" component="div" sx={{p: 1}}>
             Welcome to the blog where I share my thoughts and ideas!
           </Typography>
         </Toolbar>

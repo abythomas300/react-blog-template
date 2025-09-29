@@ -12,15 +12,13 @@ export default function Footer() {
         <Toolbar  sx={{
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'start',
+          alignItems: 'space-between',
           justifyContent: 'center',
-          p: 2
+          p: 0
           }}>
-          <Typography>
-              <FooterButtons></FooterButtons>
-          </Typography>
+              <FooterButtons/>
         </Toolbar>
-        <Box sx={{display: 'flex' ,justifyContent: 'center', p:4}}>
+        <Box sx={{display: 'flex' ,justifyContent: 'center', p:2}}>
             <Typography variant='h5'>
                 All rights reserved © 2025
             </Typography>
