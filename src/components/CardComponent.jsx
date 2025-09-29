@@ -39,9 +39,9 @@ export default function CardComponent() {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small"><ThumbUpOutlinedIcon /></Button>
-        <Button size="small"><CommentOutlinedIcon /></Button>
-        <Button size="small"><ShareOutlinedIcon /></Button>
+        <Button size="small" color='secondary'><ThumbUpOutlinedIcon /></Button>
+        <Button size="small" color='secondary'><CommentOutlinedIcon /></Button>
+        <Button size="small" color='secondary'><ShareOutlinedIcon /></Button>
       </CardActions>
     </Card>
   );

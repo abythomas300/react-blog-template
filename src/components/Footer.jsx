@@ -8,7 +8,7 @@ import FooterButtons from "./FooterButtons"
 export default function Footer() {
   return (
     <Box>
-      <AppBar position="static" color='warning'>
+      <AppBar position="static" color='primary'>
         <Toolbar  sx={{
           display: 'flex',
           flexDirection: 'column',

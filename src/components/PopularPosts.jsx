@@ -11,7 +11,7 @@ export default function PopularPosts() {
   return (
     <Paper elevation={10} sx={{mt: 2, borderRadius: 5, p:0}}>
       <List sx={{ width: '100%', my:10 ,maxWidth: 360, bgcolor: 'background.paper', borderRadius: 5}}>
-      <ListSubheader sx={{fontSize: 'large', borderRadius: 5}}>Popular Posts</ListSubheader>
+      <ListSubheader sx={{fontSize: 'large', borderRadius: 5, }}>Popular Posts</ListSubheader>
       <Divider sx={{my: 2}}></Divider>
 
       <ListItem>
