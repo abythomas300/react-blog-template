@@ -21,7 +21,7 @@ export default function Footer() {
           </Typography>
         </Toolbar>
         <Box sx={{display: 'flex' ,justifyContent: 'center', p:4}}>
-            <Typography variant='small'>
+            <Typography variant='h5'>
                 All rights reserved © 2025
             </Typography>
         </Box>

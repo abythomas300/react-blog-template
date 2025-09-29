@@ -13,7 +13,7 @@ export default function IconLabelButtons() {
         Previous
       </Button>
       <Button variant="contained" endIcon={<ArrowForwardIosIcon/>}>
-        NExt
+        Next
       </Button>
     </Stack>
   );

@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 export default function Header() {
   return (
     <Box>
-      <AppBar position="static" color='warning'>
+      <AppBar position="static" >
         <Toolbar  sx={{
           display: 'flex',
           flexDirection: 'column',
