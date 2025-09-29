@@ -12,7 +12,7 @@ export default function Tags() {
 
   return (
     <Paper elevation={10} sx={{mt: 2, borderRadius: 5, p:0}}>
-        <ListSubheader sx={{fontSize: 'large', borderRadius: 5}}>Popular Posts</ListSubheader>
+        <ListSubheader sx={{fontSize: 'large', borderRadius: 5}}>Tags</ListSubheader>
         <Divider></Divider>
 
         <Stack direction="row" spacing={2} gap={1} label="Tags" sx={{flexWrap: 'wrap', p:2, my: 2}}>

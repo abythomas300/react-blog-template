@@ -5,10 +5,12 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListSubheader from '@mui/material/ListSubheader';
 import { Divider } from '@mui/material';
+import Paper from '@mui/material/Paper';
 
 export default function PopularPosts() {
   return (
-    <List sx={{ width: '100%', my:10 ,maxWidth: 360, bgcolor: 'background.paper', borderRadius: 5}}>
+    <Paper elevation={10} sx={{mt: 2, borderRadius: 5, p:0}}>
+      <List sx={{ width: '100%', my:10 ,maxWidth: 360, bgcolor: 'background.paper', borderRadius: 5}}>
       <ListSubheader sx={{fontSize: 'large', borderRadius: 5}}>Popular Posts</ListSubheader>
       <Divider sx={{my: 2}}></Divider>
 
@@ -79,6 +81,7 @@ export default function PopularPosts() {
         <ListItemText primary="The Rise of Electric Cars: What You Need to Know for 2025" secondary="October 15, 2025" />
       </ListItem>
 
-    </List>
+    </List>      
+    </ Paper>
   );
 }

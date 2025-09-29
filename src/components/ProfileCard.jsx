@@ -4,10 +4,12 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import CardActionArea from '@mui/material/CardActionArea';
+import { Paper } from '@mui/material';
 
 export default function ProfileCard() {
   return (
-    <Card sx={{ p:0, height: '100%', width: '100%', my:4, borderRadius: 5 }}>
+    <Paper elevation={10} sx={{mt: 2, borderRadius: 5, p:0}}>
+      <Card sx={{ p:0, height: '100%', width: '100%', my:4, borderRadius: 5 }}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -28,5 +30,7 @@ export default function ProfileCard() {
         </CardContent>
       </CardActionArea>
     </Card>
+    </ Paper>
+    
   );
 }
