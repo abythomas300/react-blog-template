@@ -22,7 +22,7 @@ export default function Header() {
           </Typography>
           <Typography variant="h6" component="div" sx={{
             p: 1,
-            fontSize: {xs: 'medium'}
+            fontSize: {xs: 'medium', md: 'large'}
             }}>
             Welcome to the blog where I share my thoughts and ideas!
           </Typography>

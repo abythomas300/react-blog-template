@@ -16,13 +16,16 @@ export default function ProfileCard() {
           height="300"
           image="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybHN8ZW58MHx8MHx8fDA%3D"
           alt="author image"
-          sx={{objectFit: 'cover'}}
+          sx={{
+            objectFit: 'cover',
+            height: {lg: 475}
+          }}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
             Jane Doe
           </Typography>
-          <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+          <Typography variant="body1" >
           Just me, myself and I, exploring the universe of uknownment. 
           I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. 
           I want to share my world with you.
