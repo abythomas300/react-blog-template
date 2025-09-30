@@ -5,6 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import FooterButtons from "./FooterButtons"
 import FavoriteBorderRoundedIcon from '@mui/icons-material/FavoriteBorderRounded';
+import Link from '@mui/material/Link';
 
 export default function Footer() {
   return (
@@ -23,12 +24,13 @@ export default function Footer() {
         </Toolbar>
 
         <Box sx={{display: 'flex' ,justifyContent: 'center', p:2}} >
-            <Typography sx={{ 
-              fontSize: {xs: 'medium', md: 'large'} 
+            <Typography sx={{
+              display: 'flex', 
+              fontSize: {xs: 'medium', md: 'large'},
+              textDecoration: 'none'
               }}>
-                <Box sx={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                  Made with < FavoriteBorderRoundedIcon sx={{mx:1}} /> by maverick.h.s
-                </Box>
+                  Made with < FavoriteBorderRoundedIcon sx={{mx:1}} /> by <Link sx={{color: 'secondary.main', mx:1}}>abythomas300</Link>
+
             </Typography>
         </Box>
 
