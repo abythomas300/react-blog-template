@@ -24,7 +24,7 @@ export default function Footer() {
 
         <Box sx={{display: 'flex' ,justifyContent: 'center', p:2}} >
             <Typography sx={{ 
-              fontSize: {xs: 'medium', md: 'xx-large'} 
+              fontSize: {xs: 'medium', md: 'large'} 
               }}>
                 <Box sx={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                   Made with < FavoriteBorderRoundedIcon sx={{mx:1}} /> by maverick.h.s
