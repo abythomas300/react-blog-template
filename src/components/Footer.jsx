@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <Box>
 
-      <AppBar position="static" color='primary'>
+      <AppBar position="static" color='primary' elevation={20}>
 
         <Toolbar  sx={{
           display: 'flex',

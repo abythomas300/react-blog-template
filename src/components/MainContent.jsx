@@ -12,7 +12,7 @@ export default function MainContent() {
   return (
     <Box sx={{
       bgcolor: "#fff", 
-      p: 2, 
+      p: 2,
       mx:{xs:0, sm: 1, md: 10, lg:10, xl: 10}
       }}>
       <Grid container spacing={{xs:1, sm:2, md:4}}>

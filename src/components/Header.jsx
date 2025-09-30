@@ -6,13 +6,12 @@ import Typography from '@mui/material/Typography';
 
 export default function Header() {
   return (
-    <Box>
-      <AppBar position="static" >
+      <AppBar position="sticky" color="primary" elevation={20}>
         <Toolbar  sx={{
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          p: 1
+          p: 0
           }}>
           <Typography variant="h4" component="div" sx={{
             p: 1,
@@ -28,7 +27,5 @@ export default function Header() {
           </Typography>
         </Toolbar>
       </AppBar>
-      
-    </Box>
   );
 }
