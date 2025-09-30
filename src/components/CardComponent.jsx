@@ -8,8 +8,9 @@ import Typography from '@mui/material/Typography';
 import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
 import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
 import CommentOutlinedIcon from '@mui/icons-material/CommentOutlined';
-import Box from '@mui/material/Box';
 import ReadMoreIcon from '@mui/icons-material/ReadMore';
+import Chip from '@mui/material/Chip';
+
 
 
 export default function CardComponent() {
@@ -50,10 +51,18 @@ export default function CardComponent() {
       </CardContent>
 
 
-      <CardActions>
-        <Button size="small" color='secondary'><ThumbUpOutlinedIcon /></Button>
-        <Button size="small" color='secondary'><CommentOutlinedIcon /></Button>
-        <Button size="small" color='secondary'><ShareOutlinedIcon /></Button>
+      <CardActions sx={{my:3}}>
+        <Button size="small" color='secondary'>
+          <ThumbUpOutlinedIcon />
+          <Chip color="secondary" size="small" label="100" sx={{mx:1}} />
+        </Button>
+        <Button size="small" color='secondary'>
+          <CommentOutlinedIcon />
+          <Chip color="secondary" size="small" label="43" sx={{mx:1}} />
+        </Button>
+        <Button size="small" color='secondary'>
+          <ShareOutlinedIcon />
+        </Button>
       </CardActions>
 
     </Card>
