@@ -9,6 +9,7 @@ import ThumbUpOutlinedIcon from '@mui/icons-material/ThumbUpOutlined';
 import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
 import CommentOutlinedIcon from '@mui/icons-material/CommentOutlined';
 import Box from '@mui/material/Box';
+import ReadMoreIcon from '@mui/icons-material/ReadMore';
 
 
 export default function CardComponent() {
@@ -39,8 +40,12 @@ export default function CardComponent() {
         <Typography variant="body1" sx={{my: 3 }}>
           Lizard is the common name used for all squamate reptiles other than snakes, encompassing over 7,000 species, 
           ranging across all continents except Antarctica, as well as most oceanic island chains. The grouping is 
-          paraphyletic as some lizards are more closely related to snakes than they are to other lizards
+          paraphyletic as some lizards are more closely related to snakes than they are to other lizards...
         </Typography>
+
+        <Button variant="contained" endIcon={<ReadMoreIcon/>} color='secondary'>
+          Read more
+        </Button>
 
       </CardContent>
 
