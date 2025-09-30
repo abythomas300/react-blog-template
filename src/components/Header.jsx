@@ -11,7 +11,8 @@ export default function Header() {
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          p: 0
+          p: 0,
+          mx:{xs:0, sm: 1, md: 10, lg:10, xl: 10}
           }}>
           <Typography variant="h4" component="div" sx={{
             p: 1,
