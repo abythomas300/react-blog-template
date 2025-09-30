@@ -18,7 +18,8 @@ export default function Footer() {
           flexDirection: 'column',
           alignItems: 'space-between',
           justifyContent: 'center',
-          p: {xs:2}
+          p: {xs:2},
+          mx:{xs:0, sm: 1, md: 10, lg:10, xl: 10}
           }}>
           <FooterButtons/>
         </Toolbar>
