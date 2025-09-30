@@ -14,10 +14,16 @@ export default function Header() {
           alignItems: 'center',
           p: 1
           }}>
-          <Typography variant="h3" component="div" sx={{p: 1}}>
+          <Typography variant="h4" component="div" sx={{
+            p: 1,
+            fontSize: {xs: 'h6'}
+            }}>
             MY BLOG
           </Typography>
-          <Typography variant="h6" component="div" sx={{p: 1}}>
+          <Typography variant="h6" component="div" sx={{
+            p: 1,
+            fontSize: {xs: 'medium'}
+            }}>
             Welcome to the blog where I share my thoughts and ideas!
           </Typography>
         </Toolbar>

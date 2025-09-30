@@ -11,10 +11,10 @@ import SidebarComponent from "./SidebarComponent"
 export default function MainContent() {
   return (
     <Box sx={{bgcolor: "#fff", p: 2}}>
-      <Grid container spacing={6}>
+      <Grid container spacing={{xs:1, md:4}}>
 
         {/* Cards component inside the grid layout*/}
-        <Grid size={9}>
+        <Grid item size={{xs:12, md:8}}>
             <Paper elevation={10}>
                 <CardComponent />
             </Paper>
@@ -33,7 +33,7 @@ export default function MainContent() {
         </Grid>
 
         {/* Sidebar component inside the grid layout*/} 
-        <Grid size={3}>
+        <Grid item size={{xs:12, md:4}}>
             <Box>
                 <SidebarComponent/>
             </Box>
