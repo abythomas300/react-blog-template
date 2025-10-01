@@ -25,10 +25,11 @@ export default function Footer() {
         </Toolbar>
 
         <Box sx={{display: 'flex' ,justifyContent: 'center', p:2}} >
-            <Typography sx={{
-              display: 'flex', 
-              fontSize: {xs: 'medium', md: 'large'},
-              textDecoration: 'none'
+            <Typography variant="h4" sx={{
+              display: 'flex',
+              alignItems: 'center', 
+              fontSize: {xs: 'medium', md: 'x-large'},
+              textDecoration: 'none',
               }}>
                   Made with < FavoriteBorderRoundedIcon sx={{mx:1}} /> by <Link sx={{color: 'secondary.main', mx:1}}>abythomas300</Link>
 

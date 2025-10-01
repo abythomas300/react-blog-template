@@ -15,14 +15,13 @@ export default function Header() {
           mx:{xs:0, sm: 1, md: 10, lg:10, xl: 10}
           }}>
           <Typography variant="h4" component="div" sx={{
-            p: 1,
-            fontSize: {xs: 'h6'}
+            p: 1
             }}>
-            MY BLOG
+            THE MAVERICK BLOG
           </Typography>
-          <Typography variant="h6" component="div" sx={{
+          <Typography variant="h4" component="div" sx={{
             p: 1,
-            fontSize: {xs: 'medium', md: 'large'}
+            fontSize: {xs: 'medium', md: 'x-large'}
             }}>
             Welcome to the blog where I share my thoughts and ideas!
           </Typography>
