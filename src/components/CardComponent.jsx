@@ -10,10 +10,28 @@ import ShareOutlinedIcon from '@mui/icons-material/ShareOutlined';
 import CommentOutlinedIcon from '@mui/icons-material/CommentOutlined';
 import ReadMoreIcon from '@mui/icons-material/ReadMore';
 import Chip from '@mui/material/Chip';
+import {useState} from 'react';
 
 
 
 export default function CardComponent() {
+
+  const [likeCount, setLikeCount] = useState(0)
+  const [commentCount, setCommentCount] = useState(0)
+  const [shareCount, setShareCount] = useState(0)
+
+  function handleLikeButton() {
+    setLikeCount(likeCount + 1)
+  }
+
+  function handleCommentButton() {
+    setCommentCount(commentCount + 1)
+  }
+
+  function handleShareButton() {
+    setShareCount(shareCount + 1)
+  }
+
   return (
     <Card sx={{ p:0, my:4, height: '100%', width: '100%'}}>
 
@@ -52,16 +70,17 @@ export default function CardComponent() {
 
 
       <CardActions sx={{my:3}}>
-        <Button size="small" color='secondary'>
+        <Button size="small" color='secondary' onClick = {handleLikeButton}>
           <ThumbUpOutlinedIcon />
-          <Chip color="secondary" size="small" label="100" sx={{mx:1}} />
+          <Chip color="secondary" size="small" label={likeCount} sx={{mx:1}} />
         </Button>
-        <Button size="small" color='secondary'>
+        <Button size="small" color='secondary' onClick = {handleCommentButton}>
           <CommentOutlinedIcon />
-          <Chip color="secondary" size="small" label="43" sx={{mx:1}} />
+          <Chip color="secondary" size="small" label={commentCount} sx={{mx:1}} />
         </Button>
-        <Button size="small" color='secondary'>
+        <Button size="small" color='secondary' onClick = {handleShareButton}>
           <ShareOutlinedIcon />
+          <Chip color="secondary" size="small" label={shareCount} sx={{mx:1}} />
         </Button>
       </CardActions>
 
